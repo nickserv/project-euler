@@ -6,7 +6,7 @@ end
 
 n = 1
 i = 1
-until n.factors.length > 5_000
+until n.factors.length > 500
 	n = triangle i
 	i += 1
 end
