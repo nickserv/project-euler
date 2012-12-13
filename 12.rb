@@ -1,13 +1,10 @@
 require 'magician'
 
 def triangle n
-	(1..n).inject :+
+	n*(n+1)/2
 end
 
-n = 1
 i = 1
-until n.factors.length > 500
-	n = triangle i
-	i += 1
-end
-puts n
+i += 1 until triangle(i).factors.length > 500
+
+puts triangle i
