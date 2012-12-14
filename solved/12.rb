@@ -22,7 +22,7 @@ def triangle n
 	n*(n+1)/2
 end
 
-primes = Math.primes 10_000
+primes = Math.primes 100
 i = 1
 
 i += 1 until triangle(i).num_divisors(primes) > 500
